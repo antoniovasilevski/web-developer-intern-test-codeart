@@ -1,0 +1,1764 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("/public/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  font-family: "CustomFont";
+  color: #363636;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  cursor: default;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("/public/img-hero.png");
+}
+
+.hero-container {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+}
+
+.hero-title {
+  color: #363636;
+  font-size: 62px;
+  font-weight: 510;
+  line-height: 1.2;
+}
+
+.hero-text {
+  color: #363636;
+  font-size: 36px;
+  place-self: center;
+  line-height: 1.3;
+  font-weight: 450;
+  padding-top: 1.2rem;
+}
+
+.mobile-hero-img {
+    display: none;
+  }
+
+.offer-section {
+  margin-top: 4rem;
+}
+
+.offer-title {
+  color: #363636;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 450;
+}
+
+.offer-title span {
+  color: #549663;
+  font-weight: 800;
+}
+
+.offer-text {
+  color: #363636;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 1.3rem;
+  font-weight: 800;
+}
+
+.offer-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
+.offer-card {
+  margin-top: 40px;
+  height: 690px;
+  width: 400px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.offer-card-title {
+  padding: 15px 15px;
+  background-color: #f0d8a8;
+  border-radius: 8px 8px 0 0;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.left-card {
+  place-self: self-end;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.right-card {
+  background-color: #f2f5ef;
+}
+
+.left-card .offer-card-title {
+  border: 3px solid #f0d8a8;
+}
+
+.right-card .offer-card-title {
+  background-color: #549663;
+  color: white;
+  border: 3px solid #549663;
+}
+
+.offer-card-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.left-card .offer-card-text {
+  margin-bottom: 1.6rem;
+}
+
+.offer-card-text span {
+  color: #d43b4a;
+}
+
+.left-card .offer-card-image {
+  margin: auto;
+  height: 205px;
+  background-image: url("public/Pouch\ Mockup_3\ pieces.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.right-card .offer-card-image {
+  margin: auto;
+  height: 210px;
+  background-image: url("public/Pouch\ Mockup_5\ pieces.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.money-back-badge {
+  height: 70px;
+  padding-left: 295px;
+  margin-top: -10px;
+}
+
+.left-card .offer-card-image .money-back-badge {
+  padding-left: 245px;
+}
+
+.offer-save {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+.offer-price {
+  color: #549663;
+  font-size: 52px;
+  font-weight: 800;
+  margin-top: 0.4rem;
+}
+
+.buy-now-btn {
+  margin-top: 1.4rem;
+  background-color: #ffd800;
+  border-radius: 15px;
+  border: none;
+  width: 340px;
+  height: 70px;
+  transition: all 0.1s;
+}
+
+.buy-now-btn h2 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.buy-now-btn h5 {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.offer-regular-price {
+  margin-top: 0.5rem;
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.offer-regular-price span {
+  text-decoration: line-through;
+}
+
+.offer-logo-container {
+  margin-top: 1.3rem;
+}
+
+.top-logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8px;
+}
+
+.logo-left {
+  place-self: self-end;
+}
+
+.bottom-logos {
+  margin-top: 0.3rem;
+}
+
+.money-guarantee-text {
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  padding-bottom: 3.5rem;
+}
+
+.money-guarantee-text img {
+  display: inline-block;
+  position: absolute;
+  height: 40px;
+}
+
+.money-guarantee-text h5 {
+  display: inline-block;
+  padding-left: 55px;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 1.4;
+}
+
+.experience-container {
+  background-color: #f1f0f5;
+}
+
+.experience-title-container {
+  height: 240px;
+  background-color: #549663;
+}
+
+.experience-title {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.experience-title span {
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.arrow-btn {
+  background-color: #f1f0f5;
+  border: none;
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: calc(50% - 40px);
+}
+
+.experience-cards {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.experience-cards > div {
+  min-height: 650px;
+  max-width: 565px;
+}
+
+.first-card,
+.third-card {
+  place-self: self-end;
+}
+
+.second-card,
+.fourth-card {
+  place-self: self-start;
+}
+
+.first-card .experience-card-img {
+  background-image: url("public/Rectangle\ 10.png");
+}
+
+.second-card .experience-card-img {
+  background-image: url("public/Rectangle\ 10-1.png");
+}
+
+.third-card .experience-card-img {
+  background-image: url("public/Rectangle\ 11.png");
+}
+
+.fourth-card .experience-card-img {
+  background-image: url("public/Rectangle\ 11-1.png");
+}
+
+.first-card .experience-card-img,
+.second-card .experience-card-img,
+.third-card .experience-card-img,
+.fourth-card .experience-card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 15px;
+  box-shadow: 0 0 30px -10px rgba(0, 0, 0, 0.3);
+  max-width: 565px;
+  height: 350px;
+}
+
+.experience-card-title {
+  text-align: center;
+  font-size: 30px;
+  color: #549663;
+  padding-top: 2rem;
+  font-weight: 800;
+}
+
+.experience-card-text {
+  padding: 1.3rem 0.9rem 0 1.2rem;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 450;
+}
+
+.experience-card-text span {
+  font-weight: 800;
+}
+
+.italic-red {
+  padding-top: 2rem;
+  padding-left: 1.3rem;
+  padding-right: 0.9rem;
+  font-size: 20px;
+  font-style: italic;
+  color: #d43b4a;
+  font-weight: 900;
+}
+
+.fourth-card .italic-red {
+  padding-top: 3rem;
+}
+
+.bottom-experience {
+  text-align: center;
+}
+
+.big-yellow-btn {
+  margin-top: 3.5rem;
+  background-color: #ffd800;
+  padding: 20px 225px;
+  border: none;
+  border-radius: 15px;
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: -10px;
+  transition: all 0.1s linear;
+}
+
+.middle-icon {
+  margin-top: -5px;
+}
+
+.testimonials {
+  margin-top: 3.3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  padding-bottom: 3rem;
+}
+
+.testimonials > div {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  display: inline-block;
+  max-width: 565px;
+}
+
+.testimonial-left-card {
+  place-self: self-end;
+}
+
+.testimonial-right-card {
+  place-self: self-start;
+}
+
+.testimonial-text {
+  padding: 50px 50px 20px 30px;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 1.4;
+  z-index: 1;
+}
+
+.quote-icon {
+  position: absolute;
+  right: 0;
+  color: #fcf7ee;
+  z-index: 0;
+}
+
+.customer {
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  color: #549663;
+  padding-bottom: 25px;
+  padding-left: 30px;
+}
+
+.stars {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  bottom: 25px;
+}
+
+.ingredients-title {
+  padding-top: 3rem;
+  text-align: center;
+  color: #549663;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 2;
+}
+
+.explain-ingredients {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.ingredient-card-container {
+  margin-top: 2.5rem;
+  padding-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  row-gap: 20px;
+}
+
+.ingredient-card {
+  max-width: 1170px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.35);
+  display: flex;
+}
+
+.ingredient-card-text {
+  padding: 30px 30px 30px 35px;
+  font-size: 20px;
+  max-width: 640px;
+}
+
+.ingredient-card-title {
+  padding-bottom: 1.3rem;
+  font-weight: 800;
+  font-size: 40px;
+  color: #549663;
+}
+
+.ingredient-card-text p {
+  line-height: 1.5;
+  font-weight: 450;
+}
+
+.ingredient-card-text ul {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.ingredient-card-text li {
+  margin-top: 1rem;
+}
+
+.ingredient-card-text span {
+  font-weight: 900;
+}
+
+.ingredient-img-container {
+  margin: auto;
+  margin-right: 30px;
+  float: right;
+  height: 280px;
+  width: 440px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ksm-img {
+  background-image: url("public/no\ radius.png");
+}
+
+.neurofactor-img {
+  background-image: url("public/no\ radius-1.png");
+}
+
+.synapsa-img {
+  background-image: url("public/no\ radius-2.png");
+}
+
+.berry-img {
+  background-image: url("public/no\ radius-3.png");
+}
+
+.zum-img {
+  background-image: url("public/no\ radius-4.png");
+}
+
+.suntheanine-img {
+  background-image: url("public/no\ radius-5.png");
+}
+
+.schisandra-img {
+  background-image: url("public/no\ radius-6.png");
+}
+
+.cordyceps-img {
+  background-image: url("public/no\ radius-7.png");
+}
+
+.juice-img {
+  background-image: url("public/no\ radius-8.png");
+}
+
+.grape-img {
+  background-image: url("public/no\ radius-9.png");
+}
+
+.amla-img {
+  background-image: url("public/no\ radius-10.png");
+}
+
+.s7-img {
+  background-image: url("public/no\ radius-11.png");
+}
+
+.cta-title-container {
+  height: 180px;
+  background-color: #549663;
+}
+
+.cta-title {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 350;
+}
+
+.cta-title span {
+  color: white;
+  font-weight: 700;
+}
+
+.cta-section .arrow-btn {
+  background-color: #ffffff;
+}
+
+.cta-section .offer-card-container {
+  margin-top: 3rem;
+}
+
+.bellow-cta div {
+  background-color: #f1f0f5;
+}
+
+.bellow-cta .testimonial-left-card {
+  min-height: 260px;
+}
+
+.bellow-cta .testimonial-left-card .customer {
+  position: absolute;
+  bottom: 0;
+}
+
+.cta-text-container {
+  margin: auto;
+  width: fit-content;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 450;
+  max-width: 1180px;
+  padding-bottom: 3rem;
+}
+
+.cta-text-container .bold {
+  font-weight: 800;
+}
+
+.cta-text-container .green {
+  font-weight: 700;
+  color: #549663;
+}
+
+.mbg-section {
+  padding-bottom: 3rem;
+}
+
+.mbg-container {
+  max-width: 1240px;
+  position: relative;
+  margin: auto;
+  background-color: #549663;
+  border-radius: 15px;
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.4);
+}
+
+.mbg-title {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  line-height: 3;
+  padding-top: 1.5rem;
+}
+
+.mbg-body-main {
+  width: fit-content;
+  display: flex;
+}
+
+.mbg-body-text {
+  margin-left: 40px;
+  max-width: 740px;
+}
+
+.mbg-body-text p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.mbg-body-text .bold {
+  color: white;
+  font-weight: 700;
+}
+
+.mbg-image {
+  margin-right: 4rem;
+  position: relative;
+  height: 390px;
+  width: 420px;
+  flex: right;
+  background-image: url("public/Pouch\ Mockup_1\ piece\ 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.mbg-badge {
+  position: absolute;
+  right: -30px;
+  top: -8px;
+  height: 180px;
+}
+
+.mbg-second-text {
+  margin: 40px 40px 0 40px;
+  padding-bottom: 4rem;
+}
+
+.mbg-second-text p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.mbg-second-text .bold {
+  color: white;
+  font-weight: 700;
+}
+
+.transparent-logo {
+  position: absolute;
+  height: 40em;
+  width: 35em;
+  opacity: 0.1;
+  left: 40%;
+  top: 30%;
+  transform: rotate(90deg);
+}
+
+.feature-section {
+  background-color: #f1f0f5;
+}
+
+.feature-title {
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  color: #549663;
+}
+
+.feature-subtitle {
+  text-align: center;
+  margin: auto;
+  margin-top: 1.5rem;
+  font-size: 30px;
+  font-weight: 800;
+  max-width: 940px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5.5rem;
+}
+
+.features-left {
+  place-self: self-end;
+}
+
+.features-right {
+  place-self: self-start;
+  margin-top: 80px;
+}
+
+.features-right div {
+  font-size: 28px;
+  position: relative;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.features-left div {
+  font-size: 28px;
+  position: relative;
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.feature {
+  font-weight: 500;
+  display: inline-block;
+}
+
+.checkmark-right {
+  display: inline-block;
+  position: absolute;
+  right: -50px;
+  top: 4px;
+}
+
+.checkmark-left {
+  display: inline-block;
+  position: absolute;
+  left: -50px;
+  top: 4px;
+}
+
+.middle {
+  top: 30%;
+}
+
+.features-img {
+  margin: auto;
+  transform: translateY(+50px);
+}
+
+.safe-title {
+  text-align: center;
+  color: #363636;
+  font-size: 40px;
+  line-height: 3.5;
+  font-weight: 800;
+  padding-top: 1rem;
+}
+
+.safe-container {
+  background-image: url("public/section-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f0d8a83a;
+  background-blend-mode: multiply;
+}
+
+.safe-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 40px;
+}
+
+.safe-cards-container > div {
+  max-width: 430px;
+  text-align: center;
+  box-shadow: 0 0 35px -10px rgba(0, 0, 0, 0.4);
+  padding: 30px 20px 30px 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card-title {
+  color: #549663;
+  padding-top: 15px;
+  font-weight: 800;
+}
+
+.card-text {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 450;
+}
+
+.proven-benefits,
+.clean-ingredients {
+  place-self: self-end;
+}
+
+.bottom-safe {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.bottom-safe .big-yellow-btn {
+  margin-top: 2.3rem;
+}
+
+.big-yellow-btn:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  background-color: #ffd600;
+}
+
+.buy-now-btn:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: #ffd600;
+}
+
+.buy-section-three .offer-card-container {
+  margin-top: 3.5rem;
+}
+
+.buy-section-three .arrow-btn {
+  background-color: #ffffff;
+}
+
+.buy-section-three .money-guarantee-text {
+  padding-bottom: 3rem;
+}
+
+.mbg-second {
+  background-color: #f1f0f5;
+  padding: 1rem 0;
+}
+
+.buy-last-container {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.faq-section {
+  background-color: #f1f0f5;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.faq-container {
+  display: grid;
+  gap: 20px;
+  place-items: center;
+}
+
+.faq-header {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 3;
+}
+
+.faq-container > div {
+  width: 1170px;
+}
+
+.faq-button {
+  width: inherit;
+  text-align: left;
+  background-color: #549663;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-button > h2 {
+  padding: 15px 30px 15px 15px;
+  color: white;
+  font-size: 22px;
+  display: inline-block;
+}
+
+.expand-arrow {
+  position: absolute;
+  display: inline-block;
+  right: 30px;
+  top: calc(50% - 5px);
+}
+
+.faq-text {
+  background-color: white;
+  border-bottom: 2px solid #549663;
+  border-left: 2px solid #549663;
+  border-right: 2px solid #549663;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: none;
+}
+
+.faq-text p {
+  padding: 20px 30px;
+  font-size: 20px;
+}
+
+.inactive-button {
+  border-radius: 15px;
+}
+
+.active-button {
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.expanded {
+  display: block;
+}
+
+.active-button > .expand-arrow {
+  transform: rotate(180deg);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-top {
+  padding-top: 2rem;
+  border-bottom: 2px solid #f1f0f5;
+}
+
+.footer-top h4,
+.contact-support h4 {
+  display: inline-block;
+  padding: 18px;
+  font-weight: 800;
+}
+
+.footer-text {
+  margin: auto;
+  font-size: 14px;
+  max-width: 980px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.box-text {
+  margin-top: 1.5rem;
+  padding: 8px 0px;
+  border: 2px solid #989898;
+}
+
+.footer-bottom {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .faq-container > div {
+    width: 900px;
+  }
+
+  .experience-cards > div {
+    min-height: 850px;
+    max-width: 450px;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .testimonials > div {
+    place-self: center;
+    max-width: 700px;
+  }
+
+  .ingredient-card {
+    max-width: 950px;
+  }
+
+  .ingredient-card-text {
+    max-width: 550px;
+  }
+
+  .cta-text-container {
+    max-width: 900px;
+  }
+
+  .mbg-body-text {
+    max-width: 600px;
+    padding-right: 40px;
+  }
+
+  .transparent-logo {
+    height: 35em;
+    width: 30em;
+    left: 40%;
+    top: 30%;
+  }
+
+  .footer-container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-text {
+    font-size: 30px;
+  }
+
+  .explain-ingredients {
+    max-width: 800px;
+  }
+  .ingredient-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .ingredient-img-container {
+    margin: auto;
+    height: 350px;
+    width: 640px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 30px;
+  }
+
+  .ingredient-card-text {
+    max-width: 700px;
+  }
+
+  .features-container {
+    display: grid;
+    grid-template-columns: 2fr;
+    padding-bottom: 4rem;
+  }
+  features-i .features-right {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 0;
+  }
+
+  .features-left,
+  .features-right {
+    place-self: center;
+    min-height: 500px;
+  }
+
+  .features-left div {
+    text-align: left;
+  }
+
+  .checkmark-right {
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+    top: 4px;
+  }
+
+  .features-img {
+    grid-column: span 2;
+    transform: translateY(-20px);
+  }
+
+  .safe-cards-container > div {
+    max-width: 350px;
+    min-height: 350px;
+  }
+
+  .cta-title-container {
+    height: 220px;
+  }
+
+  .cta-title-container > .cta-title {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .faq-container > div {
+    width: 700px;
+  }
+
+  .cta-text-container {
+    max-width: 700px;
+  }
+
+  .footer-container {
+    max-width: 680px;
+  }
+
+  .mbg-title {
+    line-height: 1.5;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .mbg-body-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mbg-body-text {
+    margin-left: 40px;
+    max-width: 740px;
+  }
+
+  .mbg-image {
+    margin: auto;
+    height: 490px;
+    margin-top: 2rem;
+  }
+
+  .mbg-badge {
+    top: -20px;
+    right: -50px;
+    height: 220px;
+  }
+
+  .experience-cards {
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+  .experience-cards > div {
+    place-self: center;
+    min-height: 650px;
+    max-width: 565px;
+  }
+
+  .transparent-logo {
+    display: none;
+  }
+
+  h2,
+  h3,
+  h4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .features-right div h4,
+  .features-left div h4 {
+    padding: 0px;
+    text-align: left;
+  }
+
+  .safe-cards-container > div {
+    max-width: 300px;
+    min-height: 400px;
+  }
+
+  .offer-card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card {
+    place-self: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ingredients-title {
+    padding-top: 2rem;
+    text-align: center;
+    color: #549663;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .explain-ingredients {
+    max-width: 630px;
+  }
+  .ingredient-card-text {
+    max-width: 600px;
+  }
+
+  .ingredient-img-container {
+    height: 320px;
+    width: 580px;
+  }
+  .features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 4rem;
+  }
+
+  .features-left {
+    padding-left: 2rem;
+  }
+
+  .features-right {
+    padding-right: 2rem;
+  }
+
+  .features-left h4,
+  .features-right h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .hero-container {
+    top: 25%;
+    left: 15%;
+    transform: translate(-10%, -20%);
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-text {
+    font-size: 28px;
+    line-height: 1.2;
+    padding-top: 1rem;
+  }
+  .money-guarantee-text img {
+    left: 30px;
+    margin-top: 35px;
+  }
+  .testimonials > div {
+    max-width: 550px;
+  }
+
+  .cta-text-container {
+    max-width: 550px;
+  }
+  .safe-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+  .safe-cards-container > div {
+    place-self: center;
+    max-width: 430px;
+    min-height: 300px;
+  }
+  .faq-container > div {
+    width: 550px;
+  }
+  .footer-container {
+    max-width: 550px;
+  }
+  .buy-section-three .cta-title-container {
+    height: 280px;
+  }
+  .buy-section-three .cta-title {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero-section {
+    background-image: none;
+    height: 350px;
+  }
+  .hero-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  .hero-title {
+    padding-top: 3rem;
+    text-align: center;
+  }
+  .hero-text {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .mobile-hero-img {
+    display: block;
+    height: 400px;
+    width: 280px;
+    position: relative;
+    margin: 2rem auto 2rem auto;
+  }
+
+  .offer-section {
+    margin-top: 27rem;
+  }
+  .explain-ingredients {
+    max-width: 450px;
+    font-size: 28px;
+  }
+
+  .ingredient-card-text {
+    max-width: 450px;
+  }
+
+  .ingredient-img-container {
+    margin: 15px;
+    max-height: 280px;
+    max-width: 450px;
+  }
+
+  .features-right {
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 5rem;
+    margin-top: -8rem;
+  }
+  .experience-cards > div {
+    min-height: 700px;
+    max-width: 450px;
+  }
+  .testimonials > div {
+    max-width: 450px;
+  }
+
+  .cta-text-container {
+    max-width: 450px;
+  }
+  .mbg-image {
+    height: 380px;
+  }
+
+  .mbg-badge {
+    top: -20px;
+    right: 50px;
+    height: 150px;
+  }
+  .faq-container > div {
+    width: 450px;
+  }
+  .footer-container {
+    max-width: 450px;
+  }
+  .faq-header {
+    font-size: 32px;
+  }
+  .faq-button > h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .big-yellow-btn {
+    padding: 20px 120px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .money-guarantee-text {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .money-guarantee-text h5 {
+    padding-left: 0px;
+  }
+  .money-guarantee-text img {
+    height: 50px;
+    left: calc(50% - 25px);
+    margin-top: -50px;
+  }
+
+  .buy-section-three .cta-title-container {
+    height: 230px;
+  }
+  .buy-section-three .cta-title {
+    font-size: 32px;
+    width: 400px;
+  }
+  .experience-title {
+    font-size: 32px;
+  }
+  .experience-title span {
+    font-size: 40px;
+  }
+  .explain-ingredients {
+    max-width: 350px;
+  }
+  .ingredient-card-text {
+    max-width: 350px;
+  }
+
+  .ingredient-img-container {
+    max-height: 210px;
+    max-width: 350px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .cta-title {
+    font-size: 32px;
+    width: 350px;
+  }
+  .mbg-body-text {
+    margin-left: 20px;
+    max-width: 400px;
+  }
+  .mbg-title {
+    font-size: 32px;
+  }
+  .mbg-image {
+    margin: auto;
+    height: 350px;
+    margin-top: 2rem;
+  }
+  .mbg-second-text {
+    margin: 20px 20px 0 20px;
+    padding-bottom: 3rem;
+  }
+  .testimonials > div {
+    max-width: 350px;
+  }
+  .testimonial-text {
+    padding: 20px 20px 10px 20px;
+  }
+  .safe-cards-container > div {
+    max-width: 350px;
+  }
+  .ingredient-card-text ul {
+    margin-left: -2rem;
+  }
+  .faq-container > div {
+    width: 350px;
+  }
+  .footer-container {
+    max-width: 350px;
+  }
+  .mbg-body-text p {
+    font-size: 18px;
+    padding-right: 15px;
+  }
+  .mbg-second-text {
+    font-size: 18px;
+  }
+  .mbg-section,
+  .mbg-second {
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero-text {
+    width: 400px;
+    font-size: 24px;
+    margin: auto;
+  }
+  .experience-cards > div {
+    min-height: 700px;
+    max-width: 400px;
+  }
+  .testimonials > div {
+    max-width: 400px;
+  }
+
+  .cta-text-container {
+    max-width: 350px;
+    font-size: 18px;
+  }
+  .feature-title {
+    font-size: 38px;
+  }
+  .mbg-body-text {
+    width: 350px;
+  }
+  .mbg-image {
+    width: 300px;
+  }
+
+  .features-img {
+    max-width: 350px;
+  }
+
+  .offer-title {
+    font-size: 24px;
+  }
+  .mobile-hero-img {
+    height: 300px;
+    width: 220px;
+  }
+
+  .offer-section {
+    margin-top: 25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero-text {
+    width: 300px;
+    font-size: 20px;
+  }
+  .hero-title {
+    font-size: 32px;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .offer-section {
+    margin-top: 1rem;
+  }
+  .offer-card {
+    width: 300px;
+    height: 650px;
+  }
+  .offer-card-title {
+    padding: 15px 15px;
+    background-color: #f0d8a8;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  .left-card .offer-card-image,
+  .right-card .offer-card-image {
+    height: 180px;
+    max-width: 250px;
+  }
+  .money-back-badge {
+    height: 50px;
+    padding-left: 200px;
+    margin-top: 10px;
+  }
+  .left-card .offer-card-image .money-back-badge {
+    padding-left: 200px;
+  }
+  .buy-now-btn {
+    margin-top: 1.4rem;
+    background-color: #ffd800;
+    border-radius: 15px;
+    border: none;
+    width: 280px;
+    height: 60px;
+    transition: all 0.1s;
+  }
+
+  .buy-now-btn h2 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .experience-title-container {
+    height: 200px;
+  }
+
+  .experience-title {
+    padding-top: 20px;
+    font-size: 28px;
+  }
+
+  .experience-title span {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .experience-cards > div {
+    min-height: 650px;
+    max-width: 300px;
+  }
+
+  .first-card .experience-card-img,
+  .second-card .experience-card-img,
+  .third-card .experience-card-img,
+  .fourth-card .experience-card-img {
+    background-size: contain;
+    height: 184px;
+  }
+  .big-yellow-btn {
+    padding: 20px 70px;
+  }
+
+  .testimonials > div {
+    max-width: 300px;
+  }
+
+  .ingredients-title {
+    padding-top: 3rem;
+    font-size: 32px;
+    line-height: 1.2;
+    padding-bottom: 2rem;
+  }
+
+  .explain-ingredients {
+    font-size: 20px;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .ingredient-img-container {
+    max-width: 280px;
+  }
+
+  .ingredient-card {
+    max-width: 300px;
+  }
+
+  .ingredient-card-title {
+    font-size: 24px;
+  }
+
+  .ingredient-card-text p {
+    font-size: 18px;
+  }
+  .ingredient-card-text {
+    padding: 15px 15px 15px 20px;
+  }
+  .cta-title {
+    font-size: 28px;
+    width: 300px;
+  }
+
+  .cta-text-container {
+    width: 290px;
+    font-size: 18px;
+  }
+
+  .mbg-container{
+    width: 300px;
+  }
+
+  .mbg-body-text {
+    max-width: 280px;
+    padding-right: 0px;
+  }
+  .mbg-body-text p {
+    width: 270px;
+    font-size: 14px;
+  }
+  .mbg-title {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  .mbg-image {
+    margin-left: 2rem;
+    height: 200px;
+    width: 250px;
+  }
+  .mbg-badge {
+    right: 20px;
+    top: -10px;
+    height: 100px;
+  }
+
+  .mbg-second-text p{
+  font-size: 15px;
+}
+.feature-title {
+  font-size: 28px;
+}
+.feature-subtitle {
+  font-size: 20px;
+  max-width: 290px;
+}
+
+.features-img {
+    max-width: 250px;
+  }
+.features-left h4,
+  .features-right h4 {
+    font-size: 21px;
+  }
+  .features-right {
+    padding-left: 3.65rem;
+  }
+  .safe-cards-container > div {
+    max-width: 260px;
+  }
+
+  .buy-section-three .cta-title {
+    font-size: 24px;
+    width: 300px;
+  }
+
+  .safe-title {
+    font-size: 26px;
+  }
+
+.faq-header {
+  font-size: 24px;
+  line-height: 1.4;
+  padding-bottom: 2rem;
+}
+
+  .faq-container > div {
+    width: 300px;
+  }
+
+  .faq-button > h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    width: 220px;
+  }
+
+  .faq-text p {
+  padding: 15px 15px;
+  font-size: 16px;
+}
+.footer-container {
+    max-width: 300px;
+  }
+
+  .mobile-hero-img {
+    height: 300px;
+    width: 220px;
+  }
+
+  .offer-section {
+    margin-top: 20rem;
+  }
+
+  .ingredient-card-text p,
+  .ingredient-card-text ul {
+  font-size: 16px;
+}
+}
